@@ -34,11 +34,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="block">
               <Image
-                src={
-                  theme === "dark"
-                    ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TDD%20White-Y1zLvYCjgZArslwudo5YS0bQlvmQhV.png"
-                    : "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TDD%20Black-l7CxZ58JjjcLsdShVzzWBmRlmlfiY1.png"
-                }
+                src='/TddBlack.png'
                 alt="The Disruptors Den"
                 width={180}
                 height={40}

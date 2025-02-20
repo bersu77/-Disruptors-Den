@@ -1,12 +1,7 @@
-'use client'
+import React from 'react'
 
-import { motion } from "framer-motion"
-import Image from 'next/image'
-import { Nav } from "@/components/nav"
-
-export default function Info() {
+export default function events() {
   return (
-    <div>
-      <h1>info page</h1>
-    </div>)
+    <div>events</div>
+  )
 }
