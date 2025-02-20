@@ -1,12 +1,10 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type React from "react"
+import { Inter } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/layout/theme-provider"
+import Navbar from "@/components/layout/NavBar"
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Michael Engida - Software Engineer',
-  description: 'Portfolio of Michael Engida, a full-stack software engineer specializing in React, Next.js, and more.',
-}
+const inter = Inter({ subsets: ["latin"] })
 
 export default function RootLayout({
   children,
@@ -14,8 +12,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} bg-black min-h-screen`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Navbar />
+          <main className="pt-20">{children}</main>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
