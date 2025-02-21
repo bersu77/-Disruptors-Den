@@ -10,8 +10,8 @@ export default function Hero() {
   const [hoveredBox, setHoveredBox] = useState<number | null>(null)
 
   const bentoImages = [
-    { src: "/placeholder.svg?height=400&width=400", alt: "Entrepreneur 1", className: "col-span-2 row-span-2" },
-    { src: "/placeholder.svg?height=200&width=200", alt: "Entrepreneur 2", className: "col-span-1 row-span-1" },
+    { src: "/tdd3.avif?height=400&width=400", alt: "Entrepreneur 1", className: "col-span-2 row-span-2" },
+    { src: "/tdd4.jpg?height=200&width=200", alt: "Entrepreneur 2", className: "col-span-1 row-span-1" },
     { src: "/placeholder.svg?height=200&width=200", alt: "Entrepreneur 3", className: "col-span-1 row-span-1" },
     { src: "/placeholder.svg?height=200&width=400", alt: "Entrepreneur 4", className: "col-span-2 row-span-1" },
   ]
@@ -53,7 +53,7 @@ export default function Hero() {
 
           {/* Bento Box Images */}
           <div className="w-full lg:w-1/2">
-            <div className="grid grid-cols-3 grid-rows-3 gap-4 aspect-square">
+            <div className="grid grid-cols-3 grid-rows-2 gap-3 aspect-square">
               {bentoImages.map((image, index) => (
                 <motion.div
                   key={index}
