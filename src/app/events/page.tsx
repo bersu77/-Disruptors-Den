@@ -8,7 +8,7 @@ import DenCommunityPage from "@/components/layout/EventVido"
 const events = [
   {
     title: "AI & Innovation Forum",
-    image: "/placeholder.svg?height=192&width=320",
+    image: "/tdd.jpg?height=192&width=320",
     date: "April 10, 2025",
     location: "TBA",
     time: "TBA",

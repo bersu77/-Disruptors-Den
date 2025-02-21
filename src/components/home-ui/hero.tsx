@@ -12,7 +12,7 @@ export default function Hero() {
   const bentoImages = [
     { src: "/tdd3.avif?height=400&width=400", alt: "Entrepreneur 1", className: "col-span-2 row-span-2" },
     { src: "/tdd4.jpg?height=200&width=200", alt: "Entrepreneur 2", className: "col-span-1 row-span-1" },
-    { src: "/placeholder.svg?height=200&width=200", alt: "Entrepreneur 3", className: "col-span-1 row-span-1" },
+    { src: "/tdd5.jpg?height=200&width=200", alt: "Entrepreneur 3", className: "col-span-1 row-span-1" },
     { src: "/placeholder.svg?height=200&width=400", alt: "Entrepreneur 4", className: "col-span-2 row-span-1" },
   ]
 
