@@ -1,7 +1,11 @@
 import React from 'react'
+import Link from 'next/link'
 
-export default function events() {
+export default function page() {
   return (
-    <div>events</div>
+
+    <div>
+      <Link href={"/events"}></Link>
+    <h1>events</h1></div>
   )
 }

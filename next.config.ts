@@ -3,10 +3,9 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'assets.example.com',
+        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
         port: '',
-        pathname: '/account123/**',
-        search: '',
+        pathname: '/**',  // Match any pathname
       },
     ],
   },

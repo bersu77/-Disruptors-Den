@@ -3,11 +3,13 @@ import { ReactNode } from "react";
 
 export default function BlogLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <header className="text-center text-3xl font-bold mb-6">
-        <h1>Blog</h1>
+    <div className="blog-layout">
+      <header className="blog-header text-center py-8">
+        <h1 className="text-4xl font-bold">Blog</h1>
       </header>
-      <main className="max-w-4xl mx-auto">{children}</main> {/* Blog content */}
+      <div className="blog-content">
+        {children} {/* This will render the blog page content */}
+      </div>
     </div>
   );
 }
