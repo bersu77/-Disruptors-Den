@@ -1,9 +1,9 @@
 import React from "react";
 
 const communityImages = [
-  "/community1.jpg",
-  "/community2.jpg",
-  "/community3.jpg",
+  "/den.jpeg",
+  "/coffe.png",
+  "/meetup.jpeg",
   "/community4.jpg",
 ];
 
@@ -11,12 +11,7 @@ const EventVideoPage = () => {
   return (
     <div className="bg-white">
       {/* Hero Section (Video) */}
-      <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/path-to-your-image.jpg')" }}>
-        <div className="absolute inset-0 bg- opacity-50"></div>
-        <div className="relative z-10 flex items-center justify-center w-full h-full text-center text-white">
-          <h1 className="text-4xl font-bold">Join Us for the Tech Summit 2025</h1>
-        </div>
-      </div>
+      
 
       {/* YouTube Video Section */}
       <div className="w-full max-w-5xl mx-auto mb-8">
