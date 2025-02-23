@@ -29,7 +29,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold mb-6 text-center">Our Missions</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {missions.map((mission, index) => (
-            <MissionCard key={index} title={mission.title} description={mission.description} index={index} />
+            <MissionCard key={mission.title} title={mission.title} description={mission.description} />
           ))}
         </div>
       </section>
@@ -72,7 +72,7 @@ export default function AboutPage() {
             { year: 2020, event: "Expanded to virtual incubation programs" },
             { year: 2022, event: "Established global network of innovation hubs" },
             { year: 2023, event: "Pioneered AI-driven startup mentorship platform" },
-          ].map((item, index) => (
+          ].map((item) => (
             <div key={item.year} className="flex items-center">
               <div className="flex-shrink-0 w-24 text-right">
                 <span className="font-bold text-primary">{item.year}</span>
@@ -97,4 +97,3 @@ export default function AboutPage() {
     </div>
   )
 }
-

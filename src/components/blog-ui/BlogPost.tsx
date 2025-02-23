@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Bookmark } from "lucide-react"
 
 interface BlogPostProps {
-  id: string
   title: string
   content: string
   author: string
@@ -15,7 +14,7 @@ interface BlogPostProps {
   isBookmarked?: boolean
 }
 
-export function BlogPost({ id, title, content, author, date, imageUrl, isBookmarked = false }: BlogPostProps) {
+export function BlogPost({ title, content, author, date, imageUrl, isBookmarked = false }: BlogPostProps) {
   const [expanded, setExpanded] = useState(false)
   const [bookmarked, setBookmarked] = useState(isBookmarked)
 
