@@ -29,7 +29,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-semibold mb-6 text-center">Our Missions</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {missions.map((mission, index) => (
-            <MissionCard key={mission.title} title={mission.title} description={mission.description} />
+            <MissionCard key={index} title={mission.title} description={mission.description} index={index} />
           ))}
         </div>
       </section>
@@ -97,3 +97,4 @@ export default function AboutPage() {
     </div>
   )
 }
+
